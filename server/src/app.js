@@ -12,9 +12,15 @@ app.use(morgan('combined'))
 app.use(bodyParser.json())
 app.use(cors()) //if cors enabled then you need to have really great security for your app!
 
-app.get('/status', (req, res) => {
+/*app.get('/status', (req, res) => {
   res.send({
-    message: 'hello world!'
+    message: `Hello world!`
+  })
+})*/
+
+app.post('/register', (req, res) => {
+  res.send({
+    message: `Hello ${req.body.email}! Your user was registered! Have fun!`
   })
 })
 
