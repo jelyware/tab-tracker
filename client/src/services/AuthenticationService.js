@@ -10,3 +10,5 @@ export default {
 //  email: 'testing@gmail.com'
 //  password: '123456'
 //})
+
+//Implement a UI to be used by the Authentication Service
